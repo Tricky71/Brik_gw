@@ -1,0 +1,30 @@
+.br-image-block__list {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px 0;
+}
+
+.br-image-block__item {
+  & img {
+    width: 100%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .br-image-block__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.04vw;
+    padding: 1.04vw 0;
+    // justify-content: space-between;
+  }
+
+  .br-image-block__item {
+    width: 47.91vw;
+    &:nth-child(3) {
+      width: 100%;
+    }
+  }
+}

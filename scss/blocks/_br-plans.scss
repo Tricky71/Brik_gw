@@ -1,0 +1,10 @@
+.br-plans {
+  padding: 30px 0;
+  background-color: $accent;
+}
+
+@media (min-width: $tablet-width) {
+  .br-plans {
+    padding: 0 0 7.29vw;
+  }
+}

@@ -1,0 +1,48 @@
+.br-pages {
+  padding: 125px 15px 10px;
+  background: url(../img/pages-bg.png), linear-gradient(to bottom, $accent 68%, #EDF0F6 50%);
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.br-pages__page {
+  margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .br-pages {
+    padding: 36.46vw 3.125vw 1.67vw 7.03vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: url(../img/pages-bg.png), linear-gradient(to bottom, $accent 63.1%, #EDF0F6 50%);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+
+  .br-pages__page {
+    margin-bottom: 0;
+    &--terms {
+      width: 40.68vw;
+    }
+    &--points {
+      width: 40.68vw;
+      margin-top: 15.51vw;
+      margin-bottom: 5.16vw;
+    }
+    &--guarant {
+      width: 41.35vw;
+      margin-top: -31vw;
+    }
+    &--company {
+      width: 32.23vw;
+    }
+    &--services {
+      width: 32.23vw;
+      margin-left: 30vw;
+      margin-top: -19vw;
+    }
+  }
+}

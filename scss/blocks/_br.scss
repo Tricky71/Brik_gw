@@ -1,0 +1,148 @@
+.br-wrapper {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.br-content__left {
+  margin-bottom: 30px;
+}
+
+.br-content__title {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #fff;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.br-content__list {
+  @include reset-list;
+}
+
+.br-content__item {
+  margin-bottom: 30px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  & span {
+    display: block;
+  }
+}
+
+.br-content__text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  line-height: 28px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+}
+
+.br-content__item {
+  & ul {
+    @include reset-list;
+  }
+  & li {
+    margin-bottom: 20px;
+  }
+}
+
+.marque {
+  animation: roll 50s linear infinite;
+}
+
+@keyframes roll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(calc(-100% - 20px));
+  }
+}
+
+.br-screen {
+  &--desk {
+    .br-screen__wrapper {
+      height: 400px;
+      overflow: hidden;
+    }
+  }
+}
+
+
+
+@media (min-width: $tablet-width) {
+  .br {
+    margin-top: 1vw;
+  }
+
+  .br-container {
+    max-width: 96.88vw;
+    margin: 0 auto;
+  }
+
+  .br-wrapper {
+    max-width: 75.52vw;
+    padding: 0;
+  }
+
+  .br-content__left {
+    margin-right: 13.7vw;
+  }
+
+  .br-content__title {
+    font-size: 1.04vw;
+    padding-bottom: 1.04vw;
+  }
+
+  .br-content__text {
+    font-size: .855vw;
+    line-height: 1.46vw;
+    margin-bottom: .5vw;
+  }
+
+  .br-content__item {
+    display: flex;
+    margin-bottom: 1.56vw;
+    font-size: .855vw;
+    
+      & span {
+        width: 4.74vw;
+        flex-shrink: 0;
+        margin-right: 1vw;
+      }
+      & li {
+        margin-bottom: 1.04vw;
+      }
+  }
+
+  .marque {
+    animation: none;
+  }
+
+  .br-screen {
+    &--desk {
+      .br-screen__wrapper {
+        height: auto;
+          & .br-screen__image {
+            &:last-of-type {
+              display: none;
+            }
+      }
+        // overflow: hidden;
+      }
+    }
+}
+
+  .br-screen__wrapper {
+    // height: 100%;
+    // overflow: visible;
+    
+  }
+}
